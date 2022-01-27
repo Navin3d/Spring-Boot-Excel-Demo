@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "b1d58497-f5f2-4063-9278-2da67e637e92",
+		"name": "Student-Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Stydents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/Programming/Java/Spring_Projects/HireKarma Spring MVC Hiring/Students-Demo/How to Use/Students.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://spring-boot-excel-demo.herokuapp.com/student",
+					"protocol": "https",
+					"host": [
+						"spring-boot-excel-demo",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spring-boot-excel-demo.herokuapp.com/student/export/excel",
+					"protocol": "https",
+					"host": [
+						"spring-boot-excel-demo",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"student",
+						"export",
+						"excel"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
